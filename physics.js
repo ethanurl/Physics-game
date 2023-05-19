@@ -657,8 +657,10 @@ class Outro extends Phaser.Scene {
     constructor () {
         super('outro')
     }
-    preload() {}
-    create() {}
+    create() {
+        this.add.text(500, 250,
+            'Thanks for playing Bouncing Balls!')
+    }
 }
 new Phaser.Game({
     width: 1000,
